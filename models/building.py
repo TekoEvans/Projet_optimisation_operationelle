@@ -1,10 +1,14 @@
 class  Building:
-    def __init__(self, id_building, list_infras):
+    def __init__(self, id_building, list_infras,type_batiment):
         self.id_building = id_building
         self.list_infras = list_infras
+        self.type_batiment = type_batiment
 
     def get_building_difficulty(self):
-         return sum(self.list_infras)
+         if self.type_batiment == "hôpital":
+             return -float('inf')
+         else:
+            return sum(self.list_infras)
     
     def __lt__(self,other_objet):
         return self.get_building_difficulty() < other_objet.get_building_difficulty()

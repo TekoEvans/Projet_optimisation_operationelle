@@ -1,10 +1,11 @@
 class Infra:
-    def __init__(self,id_infra, length, infra_type, nb_houses,type_infra="aerien"):
+    def __init__(self,id_infra, length, infra_type, nb_houses,type_infra):
         self.id_inra = id_infra
         self.length = length
         self.infra_type = infra_type
         self.nb_houses = nb_houses
         self.type_infra = type_infra
+        
 
     def repair_infra(self):
         self.infra_type == "infra_intacte"
