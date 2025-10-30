@@ -1,5 +1,11 @@
-# data
-reseau_en_arbre.xlsx
+
+# Ignorer tous les fichiers CSV et Excel
+*.csv
+*.xlsx
+
+# (Optionnel) ignorer aussi les fichiers temporaires d’Excel
+~$*.xlsx
+
 # Environments
 ro_venv
 __pycache__/
