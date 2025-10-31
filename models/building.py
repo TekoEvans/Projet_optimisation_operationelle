@@ -7,6 +7,8 @@ class  Building:
     def get_building_difficulty(self):
          if self.type_batiment == "hôpital":
              return -float('inf')
+         elif self.type_batiment == "école":
+             return -float('inf')+1
          else:
             return sum(self.list_infras)
     
